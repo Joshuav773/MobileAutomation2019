@@ -6,7 +6,7 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="Mobile-Automation-2019" />
+        <module name="Generic" />
         <module name="MobileAutomation2019" />
       </profile>
     </annotationProcessing>
