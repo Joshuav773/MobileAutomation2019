@@ -1,4 +1,4 @@
-package SegmentsPage;
+package options;
 
 import base.CommonAPI;
 

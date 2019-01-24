@@ -1,4 +1,4 @@
-package ImgesPage;
+package options;
 
 import base.CommonAPI;
 

@@ -2,7 +2,6 @@ package ButtonsTest;
 
 import Buttons.ButtonsOption;
 import ButtonsPage.Buttons;
-import UiCatalogPage.UiCatalog;
 import org.openqa.selenium.support.PageFactory;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;

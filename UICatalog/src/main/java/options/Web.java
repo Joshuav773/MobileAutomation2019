@@ -1,4 +1,4 @@
-package WebPage;
+package options;
 
 import base.CommonAPI;
 

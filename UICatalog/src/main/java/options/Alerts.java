@@ -1,4 +1,4 @@
-package AlertsPage;
+package options;
 
 import base.CommonAPI;
 

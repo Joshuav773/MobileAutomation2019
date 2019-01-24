@@ -1,4 +1,4 @@
-package SearchBarPage;
+package options;
 
 import base.CommonAPI;
 
@@ -12,7 +12,7 @@ public class SearchBar extends CommonAPI {
     @FindBy(xpath = "//XCUIElementTypeStaticText[@name=\"Use of UIWebView\"]\n")
                 public static WebElement searchBarButton;
 
-    public void clickSearch() { searchBarButton.click();}
-
-
+    public void clickSearch() {
+        searchBarButton.click();
+    }
 }
