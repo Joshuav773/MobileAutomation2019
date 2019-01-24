@@ -25,6 +25,7 @@ import java.util.List;
 import java.util.concurrent.TimeUnit;
 
 public class CommonAPI {
+
     public static AppiumDriver ad = null;
     public String OS = null;
     public String deviceName = null;
@@ -42,7 +43,7 @@ public class CommonAPI {
 
         if(OS.equalsIgnoreCase("ios")){
             if(appType.contains("iPhone")){
-                appDirectory = new File("/Users/joshuasmba/Documents/MobileAutomation2019/UICatalog/app/UICatalog6.1.app.zip");
+                appDirectory = new File("/Users/joshuasmba/Documents/MobileAutomation2019/UICatalog/src/app/");
                 findApp = new File(appDirectory,"UICatalog6.1.app.zip");
                 if(deviceType.equalsIgnoreCase("RealDevice")){
                     cap = new DesiredCapabilities();
@@ -60,10 +61,12 @@ public class CommonAPI {
                     cap.setCapability(MobileCapabilityType.PLATFORM_NAME, MobilePlatform.IOS);
                     cap.setCapability(MobileCapabilityType.PLATFORM_VERSION, version);
                     cap.setCapability(MobileCapabilityType.AUTOMATION_NAME, "XCUITest");
-                    cap.setCapability(MobileCapabilityType.APP, appDirectory);//findApp.getAbsolutePath()
+                    cap.setCapability(MobileCapabilityType.APP, findApp.getAbsolutePath());
                     ad = new IOSDriver(new URL("http://127.0.0.1:4723/wd/hub"), cap);
                     ad.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
                 }
+
+
             }else if(appType.equalsIgnoreCase("iPad 2")){
                 appDirectory = new File("IOS/src/app");
                 findApp = new File(appDirectory,"UICatalog6.1.app.zip");
@@ -86,11 +89,13 @@ public class CommonAPI {
                     cap.setCapability(MobileCapabilityType.APP, findApp.getAbsolutePath());
                     ad = new IOSDriver(new URL("http://127.0.0.1:4723/wd/hub"), cap);
                     ad.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+
                 }
             }
+
         }else if(OS.contains("Android")){
             if(appType.contains("Phone")){
-                appDirectory = new File("/Users/joshuasmba/Documents/MobileAutomation2019/NYPost/app/nyp.apk");
+                appDirectory = new File("NewYorkPost/app");
                 findApp = new File(appDirectory,"nyp.apk");
                 if(deviceType.equalsIgnoreCase("RealDevice")){
                     cap = new DesiredCapabilities();
@@ -111,6 +116,7 @@ public class CommonAPI {
                     ad = new AndroidDriver(new URL("http://127.0.0.1:4723/wd/hub"), cap);
                     ad.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
                 }
+
             }else if(OS.equalsIgnoreCase("Tablets")){
                 if(deviceType.equalsIgnoreCase("RealDevice")){
                     cap = new DesiredCapabilities();
@@ -134,10 +140,12 @@ public class CommonAPI {
             }
         }
     }
+
     @AfterMethod
     public void cleanUpApp(){
         ad.quit();
     }
+
     public void clickByXpath(String locator){
         ad.findElement(By.xpath(locator)).click();
     }
