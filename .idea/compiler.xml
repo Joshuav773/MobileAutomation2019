@@ -8,6 +8,8 @@
         <outputRelativeToContentRoot value="true" />
         <module name="Generic" />
         <module name="MobileAutomation2019" />
+        <module name="NYPost" />
+        <module name="UICatalog" />
       </profile>
     </annotationProcessing>
   </component>

@@ -42,7 +42,7 @@ public class CommonAPI {
 
         if(OS.equalsIgnoreCase("ios")){
             if(appType.contains("iPhone")){
-                appDirectory = new File("/Users/mrahman/develop/MobileAutomationJuly2018/UICatalog/src/app/UICatalog6.1.app.zip");
+                appDirectory = new File("/Users/joshuasmba/Documents/MobileAutomation2019/UICatalog/app/UICatalog6.1.app.zip");
                 findApp = new File(appDirectory,"UICatalog6.1.app.zip");
                 if(deviceType.equalsIgnoreCase("RealDevice")){
                     cap = new DesiredCapabilities();
@@ -64,8 +64,6 @@ public class CommonAPI {
                     ad = new IOSDriver(new URL("http://127.0.0.1:4723/wd/hub"), cap);
                     ad.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
                 }
-
-
             }else if(appType.equalsIgnoreCase("iPad 2")){
                 appDirectory = new File("IOS/src/app");
                 findApp = new File(appDirectory,"UICatalog6.1.app.zip");
@@ -88,14 +86,12 @@ public class CommonAPI {
                     cap.setCapability(MobileCapabilityType.APP, findApp.getAbsolutePath());
                     ad = new IOSDriver(new URL("http://127.0.0.1:4723/wd/hub"), cap);
                     ad.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-
                 }
             }
-
         }else if(OS.contains("Android")){
             if(appType.contains("Phone")){
-                appDirectory = new File("Android/src/app");
-                findApp = new File(appDirectory,"snapchat.apk");
+                appDirectory = new File("/Users/joshuasmba/Documents/MobileAutomation2019/NYPost/app/nyp.apk");
+                findApp = new File(appDirectory,"nyp.apk");
                 if(deviceType.equalsIgnoreCase("RealDevice")){
                     cap = new DesiredCapabilities();
                     cap.setCapability(MobileCapabilityType.DEVICE_NAME,deviceName);
@@ -115,7 +111,6 @@ public class CommonAPI {
                     ad = new AndroidDriver(new URL("http://127.0.0.1:4723/wd/hub"), cap);
                     ad.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
                 }
-
             }else if(OS.equalsIgnoreCase("Tablets")){
                 if(deviceType.equalsIgnoreCase("RealDevice")){
                     cap = new DesiredCapabilities();
