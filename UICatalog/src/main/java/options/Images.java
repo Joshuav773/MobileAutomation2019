@@ -7,8 +7,10 @@ import org.openqa.selenium.support.FindBy;
 
 
 public class Images extends CommonAPI {
+
    @FindBy(xpath = "//XCUIElementTypeSlider[@name=\"Duration\"]")public static WebElement imageDuration;
-    public void imageDurationFunction(){
+
+    public void slideImageDurationFunction(){
         imageDuration.click();
     }
 }

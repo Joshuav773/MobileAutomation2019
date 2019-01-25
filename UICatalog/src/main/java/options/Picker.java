@@ -10,7 +10,9 @@ import java.util.List;
 
 
 public class Picker extends CommonAPI {
+
     @FindBy(xpath = "//UIAApplication[1]/UIAWindow[2]/UIAToolbar[1]/UIASegmentedControl[1]/UIAButton")
+
     List<WebElement> segmentControl = new ArrayList<WebElement>();
 
     public void getUIPicker(){
@@ -22,6 +24,4 @@ public class Picker extends CommonAPI {
     public void getCustom(){
         segmentControl.get(2).click();
     }
-
-
 }

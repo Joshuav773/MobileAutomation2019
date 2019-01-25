@@ -1,0 +1,10 @@
+-------------------------------------------------------------------------------
+Test set: ButtonsTest.ButtonsTest
+-------------------------------------------------------------------------------
+Tests run: 8, Failures: 1, Errors: 0, Skipped: 7, Time elapsed: 0.333 s <<< FAILURE! - in ButtonsTest.ButtonsTest
+setUp(ButtonsTest.ButtonsTest)  Time elapsed: 0.222 s  <<< FAILURE!
+org.testng.TestNGException: 
+
+Parameter 'OS' is required by @Configuration on method setUp but has not been marked @Optional or defined
+
+

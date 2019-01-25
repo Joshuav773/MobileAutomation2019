@@ -10,7 +10,7 @@
 
     <test name="Go to Home page" preserve-order="true">
         <classes>
-           <class name="ButtonsTest.ButtonsTest"></class>
+           <class name="UICatalogTests.ButtonsTest"></class>
         </classes>
     </test>
 </suite>

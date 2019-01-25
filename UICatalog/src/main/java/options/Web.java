@@ -16,10 +16,10 @@ public class Web extends CommonAPI {
             "\n")
     public static WebElement website;
 
-
-
-
-
-    public void webHome () { web.click();}
-    public void appleWebsite() {website.click();}
+    public void webHome () {
+        web.click();
+    }
+    public void appleWebsite() {
+        website.click();
+    }
 }

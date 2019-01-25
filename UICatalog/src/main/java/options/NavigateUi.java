@@ -7,12 +7,9 @@ import org.openqa.selenium.WebElement;
 import java.util.ArrayList;
 import java.util.List;
 
-/**
- * Created by mrahman on 1/15/17.
- */
 public class NavigateUi extends CommonAPI {
 
-    public void home()throws InterruptedException{
+    public void clicks() throws InterruptedException{
 
         List<WebElement> elements = new ArrayList<WebElement>();
         sleep(1);

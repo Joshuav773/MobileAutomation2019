@@ -1,0 +1,10 @@
+-------------------------------------------------------------------------------
+Test set: TestSuite
+-------------------------------------------------------------------------------
+Tests run: 16, Failures: 1, Errors: 0, Skipped: 15, Time elapsed: 0.318 s <<< FAILURE! - in TestSuite
+setUp(UICatalogTests.ButtonsTest)  Time elapsed: 0.173 s  <<< FAILURE!
+org.testng.TestNGException: 
+
+Parameter 'OS' is required by @Configuration on method setUp but has not been marked @Optional or defined
+
+
