@@ -17,6 +17,10 @@
             <class name="UICatalogTests.UITest"></class>
             <class name="UICatalogTests.PickersTest"></class>
             <class name="UICatalogTests.SegmentsTests"></class>
+            <class name="UICatalogTests.TextFieldsTests"></class>
+            <class name="UICatalogTests.TextViewButtonTest"></class>
+            <class name="UICatalogTests.ToolBarTests"></class>
+            <class name="UICatalogTests.WebTest"></class>
         </classes>
     </test>
 </suite>

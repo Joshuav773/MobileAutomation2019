@@ -5,10 +5,8 @@ import base.CommonAPI;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
-/**
- * Created by mrahman on 1/15/17.
- */
 public class Web extends CommonAPI {
+
     @FindBy(xpath = "//XCUIElementTypeStaticText[@name=\"Use of UIWebView\"]")
     public static WebElement web;
 

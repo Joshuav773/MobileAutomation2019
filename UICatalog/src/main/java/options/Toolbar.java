@@ -5,13 +5,9 @@ import base.CommonAPI;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
-/**
- * Created by mrahman on 1/15/17.
- */
 public class Toolbar extends CommonAPI {
     @FindBy(xpath = "//XCUIElementTypeSwitch[@name=\"Image\"]")public static WebElement image;
     @FindBy(xpath = "//XCUIElementTypeSwitch[@name=\"Tinted\"]")public static WebElement tinted;
-    @FindBy(xpath = "//XCUIElementTypeApplication[@name=\"UICatalog\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeScrollView/XCUIElementTypePicker/XCUIElementTypePickerWheel")public static WebElement scrollDown;
     @FindBy(xpath = "//XCUIElementTypeButton[@name=\"Default\"]")public static WebElement styleDefault;
     @FindBy(xpath = "//XCUIElementTypeButton[@name=\"Black\"]")public static WebElement styleBlack;
     @FindBy(xpath = "//XCUIElementTypeButton[@name=\"Translucent\"]")public static WebElement styleTranslucent;
@@ -19,6 +15,7 @@ public class Toolbar extends CommonAPI {
     @FindBy(xpath = "//XCUIElementTypeButton[@name=\"Item1\"]")public static WebElement item1;
     @FindBy(xpath = "//XCUIElementTypeButton[@name=\"Item2\"]")public static WebElement item2;
     @FindBy(xpath = "//XCUIElementTypeButton[@name=\"Tools\"]")public static WebElement tools;
+
     public void setImage(){
         clickByXpathWebElement(image);
     }

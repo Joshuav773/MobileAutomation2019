@@ -2,12 +2,9 @@ package options;
 
 import base.CommonAPI;
 
-/**
- * Created by mrahman on 1/15/17.
- */
 public class TextView  extends CommonAPI {
 
-    public void textViewButton(){
+    public void clickTextViewButton(){
         clickByXpath("//XCUIElementTypeStaticText[@name=\"TextView\"]");
     }
 
